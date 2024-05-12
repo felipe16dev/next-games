@@ -60,6 +60,12 @@ body{
     margin: auto;
     border-radius: 10px;
     cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.cards:hover{
+    background-color: #38393c;
+    transform: translate(0px,-8px);
 }
 
 .img{
