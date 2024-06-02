@@ -11,7 +11,7 @@ body{
 /*========== HEADER ==========*/
 
 .header{
-    background-color: #1a1b1e;
+    background-color: #25282c;
     position: sticky;
     top: 0;
     padding: 1rem;
@@ -39,7 +39,6 @@ body{
     text-decoration: none;
     color: #69f;
 }
-
 /*========== MAIN ==========*/
 
 .main{
@@ -47,26 +46,26 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 20px;
+    padding: 2rem 0.9rem;
 }
 
 .next-stream{
     color: #fff;
-    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     font-weight: 900;
     margin-bottom: 15px;
 }
 
 .container-games{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
     gap: 2rem;
 }
 
 .cards{
     background-color: #25282c;
     max-width: 100%;
-    width: 150px;
+    width: 250px;
     height: auto;
     margin: auto;
     border-radius: 10px;
@@ -168,18 +167,66 @@ body{
     color: #25282c;
 }
 
+/*========== FOOTER ==========*/
+
+.footer{
+    border-top: 2px solid #ffffff34;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    background-color: #25282c;
+}
+
+.container-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.linea{
+    border-bottom: 1px solid #fff;
+    width: 50px;
+    display: inline-block;
+}
+
+.footer-container-img{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-subti{
+    color: #d5d5d5;
+    font-size: 0.8rem;
+}
+
+.footer-img{
+    width: 20px;
+}
+
+.footer-link{
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.footer-link:hover{
+    transform: translate(0px,-3px);
+}
 /*========== MEDIA QUERIE ==========*/
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 640px) {
     .container-games{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
         gap: 3rem;
     }
 
     .cards{
         max-width: 100%;
-        width: 250px;
+        width: 150px;
         height: auto;
         transition-duration: 0.5s;
     }
@@ -191,6 +238,6 @@ body{
 
     
     .header-tittle{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 }
