@@ -35,6 +35,11 @@ body{
     margin-top: 10px;
 }
 
+.enlace-head{
+    text-decoration: none;
+    color: #69f;
+}
+
 /*========== MAIN ==========*/
 
 .main{
